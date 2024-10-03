@@ -1,7 +1,8 @@
 ﻿using System;
+using BankingApi.EventReceiver.Contracts;
 namespace BankingApi.EventReceiver.Data;
 
-public class BankAccountRepository
+public class BankAccountRepository : IBankAccountRepository
 {
     private readonly BankingApiDbContext _context;
 
